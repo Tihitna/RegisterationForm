@@ -1,38 +1,72 @@
-.App {
+.registration{
+  width: 640px;
+  padding: 50px;
+  padding-top: 0;
+  margin: auto;
+  border: 1px solid gray; 
+  margin-top: 100px;
+  border-radius: 7px;
+  background-color: rgba(128, 128, 128, 0.144);
+  color: rgb(47, 47, 47);
+}
+.registration h2{
   text-align: center;
+  font-size: 28px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row{
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+label{
+  font-size: 14px;
+  font-weight: 500;
+}
+input{
+ width: 300px;
+ height: 23px;
+ padding: 5px;
+ border-radius: 7px;
+ border: 1px solid gray;
+ background-color: transparent;
+ outline: none;
+}
+input::placeholder{
+  color: rgb(98, 98, 98);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus{
+  border-color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.col{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.3rem;
 }
-
-.App-link {
-  color: #61dafb;
+.registration .fullName {
+  padding-top: 0.3rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  padding: 9px 50px;
+  border-radius: 7px;
+  border:1px solid gray;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgba(47, 47, 47, 0.912);
+  background-color: #d8c3ce;
+  margin-top: 20px;
+}
+button:hover{
+  background-color: #daddf17e;
+  color: black;
+}
+.error{
+  color:red;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.001);
+  padding-left: 10px;
 }
